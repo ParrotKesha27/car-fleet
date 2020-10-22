@@ -1,11 +1,11 @@
-# Car Park
+# Car Fleet
 
 ### Requirements
 
-1. Kotlin compiler
-2. JDK 11+ version
+1. Kotlin compiler 1.3+ version
+2. Oracle/Open JDK 11+ version
 
 ### Run application
 
-1. Compile application with command `kotlinc **/*.kt main.kt -include-runtime -d main.jar`
-2. Run application with command `java -jar main.jar`
+1. Compile application with command `kotlinc entity/**/*.kt extension/*.kt Main.kt -include-runtime -d <your_name>.jar`
+2. Run application with command `java -jar <your_name>.jar`
