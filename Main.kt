@@ -31,11 +31,9 @@ fun createCarByNumber(number: Int): Car {
     var engine = Engine(power, "Vendor $number")
     var transmission = if (number % 2 == 0) Transmission.AUTOMATIC else Transmission.MANUAL
 
-    var car = when {
+    return when {
         number % 3 == 0 -> Car("Car $number", transmission, weight, driver, engine)
         number % 3 == 1 -> Lorry("Car $number", transmission, weight, driver, engine, (3000..5000).random().toFloat())
         else -> SportCar("Car $number", transmission, weight, driver, engine, (300..450).random())
     }
-
-    return car
 }

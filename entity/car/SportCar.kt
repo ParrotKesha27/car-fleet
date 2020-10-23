@@ -17,5 +17,5 @@ class SportCar(
         turnLeft()
     }
 
-    override fun toString() = super.toString() + "\nMax speed: $maxSpeed"
+    override fun toString() = "${super.toString()}\nMax speed: $maxSpeed"
 }

@@ -17,5 +17,5 @@ class Lorry(
         turnRight()
     }
 
-    override fun toString() = super.toString() + "\nLifting capacity: $liftingCapacity"
+    override fun toString() = "${super.toString()}\nLifting capacity: $liftingCapacity"
 }
